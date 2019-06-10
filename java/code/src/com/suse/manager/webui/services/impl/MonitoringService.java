@@ -112,13 +112,13 @@ public class MonitoringService {
     public static Optional<Map<String, Boolean>> getStatus() {
         return invokeMonitoringCtl("status", Optional.empty(),
                 new Tuple2<>("node",
-                        "module_|-node_exporter_service_|-service.status_|-run"),
+                        "mgrcompat_|-node_exporter_service_|-service.status_|-module_run"),
                 new Tuple2<>("postgres",
-                        "module_|-postgres_exporter_service_|-service.status_|-run"),
+                        "mgrcompat_|-postgres_exporter_service_|-service.status_|-module_run"),
                 new Tuple2<>("tomcat",
-                        "module_|-jmx_tomcat_exporter_service_|-service.status_|-run"),
+                        "mgrcompat_|-jmx_tomcat_exporter_service_|-service.status_|-module_run"),
                 new Tuple2<>("taskomatic",
-                        "module_|-jmx_taskomatic_exporter_service_|-service.status_|-run")
+                        "mgrcompat_|-jmx_taskomatic_exporter_service_|-service.status_|-module_run")
                 );
     }
 
