@@ -1,3 +1,4 @@
+- Synchronize Salt modules and states during registration
 - Allow adding monitoring entitlement to openSUSE Leap 15.x
 - Add support for Salt Formulas to be used with standalone Salt
 - Fix channel sync status logic in products page (bsc#1131721)
