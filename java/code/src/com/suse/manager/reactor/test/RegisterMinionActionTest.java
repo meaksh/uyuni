@@ -137,6 +137,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
             new Expectations(){ {
                 allowing(saltServiceMock).getMasterHostname(MINION_ID);
                 will(returnValue(Optional.of(MINION_ID)));
+                allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                 allowing(saltServiceMock).getMachineId(MINION_ID);
                 will(returnValue(Optional.of(MACHINE_ID)));
                 if (key != null) {
@@ -152,6 +153,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
             new Expectations() {{
                 allowing(saltServiceMock).getMasterHostname(MINION_ID);
                 will(returnValue(Optional.of(MINION_ID)));
+                allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                 allowing(saltServiceMock).getMachineId(MINION_ID);
                 will(returnValue(Optional.of(MACHINE_ID)));
                 allowing(saltServiceMock).getGrains(MINION_ID);
@@ -398,6 +400,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                 (saltServiceMock, key) -> new Expectations() {{
                     allowing(saltServiceMock).getMasterHostname(MINION_ID);
                     will(returnValue(Optional.of(MINION_ID)));
+                    allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                     allowing(saltServiceMock).getMachineId(MINION_ID);
                     will(returnValue(Optional.of(MACHINE_ID)));
                     allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -441,6 +444,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                 (saltServiceMock, key) -> new Expectations() {{
                     allowing(saltServiceMock).getMasterHostname(MINION_ID);
                     will(returnValue(Optional.of(MINION_ID)));
+                     allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                     allowing(saltServiceMock).getMachineId(MINION_ID);
                     will(returnValue(Optional.of(MACHINE_ID)));
                     allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -489,6 +493,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                 (saltServiceMock, key) -> new Expectations() {{
                     allowing(saltServiceMock).getMasterHostname(MINION_ID);
                     will(returnValue(Optional.of(MINION_ID)));
+                    allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                     allowing(saltServiceMock).getMachineId(MINION_ID);
                     will(returnValue(Optional.of(MACHINE_ID)));
                     allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -540,6 +545,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                 (saltServiceMock, key) -> new Expectations() {{
                     allowing(saltServiceMock).getMasterHostname(MINION_ID);
                     will(returnValue(Optional.of(MINION_ID)));
+                    allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                     allowing(saltServiceMock).getMachineId(MINION_ID);
                     will(returnValue(Optional.of(MACHINE_ID)));
                     allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -598,6 +604,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                 (saltServiceMock, key) -> new Expectations() {{
                     allowing(saltServiceMock).getMasterHostname(MINION_ID);
                     will(returnValue(Optional.of(MINION_ID)));
+                    allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                     allowing(saltServiceMock).getMachineId(MINION_ID);
                     will(returnValue(Optional.of(MACHINE_ID)));
                     allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -664,6 +671,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
             {
                 allowing(saltServiceMock).getMasterHostname(MINION_ID);
                 will(returnValue(Optional.of(MINION_ID)));
+                allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                 allowing(saltServiceMock).getMachineId(MINION_ID);
                 will(returnValue(Optional.of(MACHINE_ID)));
                 allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -713,6 +721,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                 (saltServiceMock, key) -> new Expectations() {{
                     allowing(saltServiceMock).getMasterHostname(MINION_ID);
                     will(returnValue(Optional.of(MINION_ID)));
+                    allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                     allowing(saltServiceMock).getMachineId(MINION_ID);
                     will(returnValue(Optional.of(MACHINE_ID)));
                     allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -752,6 +761,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                 (saltServiceMock, key) -> new Expectations() {{
                     allowing(saltServiceMock).getMasterHostname(MINION_ID);
                     will(returnValue(Optional.of(MINION_ID)));
+                    allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                     allowing(saltServiceMock).getMachineId(MINION_ID);
                     will(returnValue(Optional.of(MACHINE_ID)));
                     allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -802,6 +812,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                 (saltServiceMock, key) -> new Expectations() {{
                     allowing(saltServiceMock).getMasterHostname(MINION_ID);
                     will(returnValue(Optional.of(MINION_ID)));
+                    allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                     allowing(saltServiceMock).getMachineId(MINION_ID);
                     will(returnValue(Optional.of(MACHINE_ID)));
                     allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -855,6 +866,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                 (saltServiceMock, key) -> new Expectations() {{
                     allowing(saltServiceMock).getMasterHostname(MINION_ID);
                     will(returnValue(Optional.of(MINION_ID)));
+                    allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                     allowing(saltServiceMock).getMachineId(MINION_ID);
                     will(returnValue(Optional.of(MACHINE_ID)));
                     allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -895,6 +907,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                 (saltServiceMock, key) -> new Expectations() {{
                     allowing(saltServiceMock).getMasterHostname(MINION_ID);
                     will(returnValue(Optional.of(MINION_ID)));
+                    allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                     allowing(saltServiceMock).getMachineId(MINION_ID);
                     will(returnValue(Optional.of(MACHINE_ID)));
                     allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -1015,6 +1028,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                 (saltServiceMock, key) -> new Expectations() {{
                     allowing(saltServiceMock).getMasterHostname(MINION_ID);
                     will(returnValue(Optional.of(MINION_ID)));
+                    allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                     allowing(saltServiceMock).getMachineId(MINION_ID);
                     will(returnValue(Optional.of(MACHINE_ID)));
                     allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -1058,6 +1072,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                     (saltServiceMock, key) -> new Expectations() {{
                         allowing(saltServiceMock).getMasterHostname(MINION_ID);
                         will(returnValue(Optional.of(MINION_ID)));
+                        allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                         allowing(saltServiceMock).getMachineId(MINION_ID);
                         will(returnValue(Optional.of(MACHINE_ID)));
                         allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -1101,6 +1116,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                     (saltServiceMock, key) -> new Expectations() {{
                         allowing(saltServiceMock).getMasterHostname(MINION_ID);
                         will(returnValue(Optional.of(MINION_ID)));
+                        allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                         allowing(saltServiceMock).getMachineId(MINION_ID);
                         will(returnValue(Optional.of(MACHINE_ID)));
                         allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -1142,6 +1158,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                 (saltServiceMock, key) -> new Expectations() {{
                     allowing(saltServiceMock).getMasterHostname(MINION_ID);
                     will(returnValue(Optional.of(MINION_ID)));
+                    allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                     allowing(saltServiceMock).getMachineId(MINION_ID);
                     will(returnValue(Optional.of(MACHINE_ID)));
                     allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -1189,6 +1206,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                 (saltServiceMock, key) -> new Expectations() {{
                     allowing(saltServiceMock).getMasterHostname(MINION_ID);
                     will(returnValue(Optional.of(MINION_ID)));
+                    allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                     allowing(saltServiceMock).getMachineId(MINION_ID);
                     will(returnValue(Optional.of(MACHINE_ID)));
                     allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -1245,6 +1263,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                     (saltServiceMock, key) -> new Expectations() {{
                         allowing(saltServiceMock).getMasterHostname(MINION_ID);
                         will(returnValue(Optional.of(MINION_ID)));
+                        allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                         allowing(saltServiceMock).getMachineId(MINION_ID);
                         will(returnValue(Optional.of(MACHINE_ID)));
                         allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -1310,6 +1329,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                 (saltServiceMock, key) -> new Expectations() {{
                     allowing(saltServiceMock).getMasterHostname(MINION_ID);
                     will(returnValue(Optional.of(MINION_ID)));
+                    allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                     allowing(saltServiceMock).getMachineId(MINION_ID);
                     will(returnValue(Optional.of(MACHINE_ID)));
                     allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -1375,6 +1395,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
                 (saltServiceMock, key) -> new Expectations() {{
                     allowing(saltServiceMock).getMasterHostname(MINION_ID);
                     will(returnValue(Optional.of(MINION_ID)));
+                    allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                     allowing(saltServiceMock).getMachineId(MINION_ID);
                     will(returnValue(Optional.of(MACHINE_ID)));
                     allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -1443,6 +1464,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
             {
                 allowing(saltServiceMock).getMasterHostname(MINION_ID);
                 will(returnValue(Optional.of(MINION_ID)));
+                allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                 allowing(saltServiceMock).getMachineId(MINION_ID);
                 will(returnValue(Optional.of(MACHINE_ID)));
                 allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -1500,6 +1522,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
             {
                 allowing(saltServiceMock).getMasterHostname(MINION_ID);
                 will(returnValue(Optional.of(MINION_ID)));
+                allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                 allowing(saltServiceMock).getMachineId(MINION_ID);
                 will(returnValue(Optional.of(MACHINE_ID)));
                 allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -1553,6 +1576,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
             {
                 allowing(saltServiceMock).getMasterHostname(MINION_ID);
                 will(returnValue(Optional.of(MINION_ID)));
+                allowing(saltServiceMock).syncAll(with(any(MinionList.class)));
                 allowing(saltServiceMock).getMachineId(MINION_ID);
                 will(returnValue(Optional.of(MACHINE_ID)));
                 allowing(saltServiceMock).syncGrains(with(any(MinionList.class)));
@@ -1607,6 +1631,7 @@ public class RegisterMinionActionTest extends JMockBaseTestCaseWithUser {
         context().checking(new Expectations() { {
             allowing(saltService).getMasterHostname(MINION_ID);
             will(returnValue(Optional.of(MINION_ID)));
+            allowing(saltService).syncAll(with(any(MinionList.class)));
             allowing(saltService).getMachineId(MINION_ID);
             will(returnValue(Optional.of(MACHINE_ID)));
             allowing(saltService).getGrains(MINION_ID);
