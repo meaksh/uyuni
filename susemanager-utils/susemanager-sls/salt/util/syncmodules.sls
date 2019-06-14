@@ -1,5 +1,5 @@
 sync_modules:
-  module.run:
+  mgrcompat.module_run:
 # workaround for https://github.com/saltstack/salt/issues/38095
 {%- if salt['pillar.get']('contact_method') in ['ssh-push', 'ssh-push-tunnel'] %}
     - name: test.true

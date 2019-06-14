@@ -1,3 +1,3 @@
 resumessh:
-    module.run:
+    mgrcompat.module_run:
     -   name: mgractionchains.resume

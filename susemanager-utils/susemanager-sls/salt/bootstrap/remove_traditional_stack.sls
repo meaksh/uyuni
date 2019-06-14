@@ -43,7 +43,7 @@ remove_traditional_stack:
       - rhnmd
 {%- if repos_disabled.count > 0 %}
     - require:
-      - module: disable_repo*
+      - mgrcompat: disable_repo*
 {%- endif %}
     - unless: rpm -q spacewalk-proxy-common
 

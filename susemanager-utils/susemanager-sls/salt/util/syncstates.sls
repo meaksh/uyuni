@@ -1,4 +1,4 @@
 sync_states:
-  module.run:
+  mgrcompat.module_run:
       - name: saltutil.sync_states
 

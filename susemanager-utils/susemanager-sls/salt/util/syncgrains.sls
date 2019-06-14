@@ -1,4 +1,4 @@
 sync_grains:
-  module.run:
+  mgrcompat.module_run:
     - name: saltutil.sync_grains
     - reload_grains: true

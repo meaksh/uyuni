@@ -68,7 +68,7 @@ mgr_sshd_public_key_copied:
       - pkg: mgr_sshd_installed_enabled
 
 mgr_saltutil_synced:
-  module.run:
+  mgrcompat.module_run:
     - name: saltutil.sync_all
 
 {% endif %}

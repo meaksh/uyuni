@@ -1,3 +1,3 @@
 sync_beacons:
-  module.run:
+  mgrcompat.module_run:
     - name: saltutil.sync_beacons
